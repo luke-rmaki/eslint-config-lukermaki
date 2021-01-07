@@ -79,7 +79,7 @@ module.exports = {
     'react/jsx-filename-extension': [
       1,
       {
-        extensions: ['.js', '.jsx'],
+        extensions: ['.js', '.jsx', '.ts', '.tsx', '.mdx'],
       },
     ],
     radix: 0,
@@ -104,8 +104,8 @@ module.exports = {
         trailingComma: 'es5',
         singleQuote: true,
         printWidth: 80,
-        //below line only for windows users facing CLRF and eslint/prettier error
-        // non windows users feel free to delete it
+        // below line only for window users facing CLRF and eslint/prettier error
+        // non window users feel free to delete it
         endOfLine: 'auto',
       },
     ],
@@ -118,6 +118,7 @@ module.exports = {
     ],
     'react-hooks/rules-of-hooks': 'error',
     'react-hooks/exhaustive-deps': 'warn',
+    '@typescript-eslint/comma-dangle': ['off'],
   },
   plugins: ['html', 'prettier', 'react-hooks'],
 };
