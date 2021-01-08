@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-rmaki",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "My preferred eslint and prettier",
   "keywords": [
     "javascript",
