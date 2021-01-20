@@ -49,6 +49,14 @@ module.exports = {
     'react/react-in-jsx-scope': 0,
     'react/forbid-prop-types': 0,
     'react/no-unescaped-entities': 0,
+    'import/prefer-default-export': 0,
+    import: 0,
+    'react/jsx-filename-extension': [
+      1,
+      {
+        extensions: [`.js`, `.jsx`, `.ts`, `.tsx`, `.mdx`],
+      },
+    ],
     // 'no-shadow': [
     //   2,
     //   {
@@ -80,4 +88,12 @@ module.exports = {
     '@typescript-eslint/comma-dangle': [`off`],
   },
   plugins: [`html`, `prettier`, `react-hooks`],
+  settings: {
+    'import/resolver': {
+      node: {
+        extensions: [`.js`, `.jsx`, `.ts`, `.tsx`],
+        moduleDirectory: [`node_modules`, `src/`],
+      },
+    },
+  },
 };

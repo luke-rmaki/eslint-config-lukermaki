@@ -1,6 +1,6 @@
 # My Preferred Eslint and Prettier Setup
 
-ESLint and Prettier setup bundled in a package. Forkered from [here](https://github.com/wesbos/eslint-config-wesbos).
+ESLint and Prettier setup bundled in a package. Forked from [here](https://github.com/wesbos/eslint-config-wesbos).
 
 ## Local / Per Project Install
 
