@@ -1,7 +1,10 @@
 module.exports = {
+  globals: {
+    React: true,
+    JSX: true,
+  },
   extends: [
     'plugin:@typescript-eslint/recommended', // Uses rules from `@typescript-eslint/eslint-plugin`,
-    'prettier/@typescript-eslint', // Use `eslint-config-prettier` to override conflicting rules from `@typescript-eslint/eslint-plugin`
     'airbnb-typescript',
     'plugin:@typescript-eslint/recommended',
     'plugin:@typescript-eslint/recommended-requiring-type-checking',
@@ -20,6 +23,18 @@ module.exports = {
         checksVoidReturn: false,
       },
     ],
+    '@typescript-eslint/no-explicit-any': 'off',
+    'no-unused-vars': 0,
+    '@typescript-eslint/no-unused-vars': [1, { ignoreRestSiblings: true }],
+    'no-redeclare': 'off',
+    '@typescript-eslint/no-redeclare': [
+      'warn',
+      {
+        ignoreDeclarationMerge: true,
+      },
+    ],
+    'no-unused-vars': 0,
+    '@typescript-eslint/no-floating-promises': 'off',
   },
   parserOptions: {
     project: './tsconfig.json',

@@ -1,12 +1,10 @@
 module.exports = {
   extends: [`airbnb`, `prettier`],
-  parser: `babel-eslint`,
+  parser: `@babel/eslint-parser`,
   parserOptions: {
-    ecmaVersion: 2020,
-    // Can I remove these now?
-    ecmaFeatures: {
-      impliedStrict: true,
-      classes: true,
+    requireConfigFile: false,
+    babelOptions: {
+      presets: [`@babel/preset-react`],
     },
   },
   env: {
@@ -89,12 +87,4 @@ module.exports = {
     '@typescript-eslint/comma-dangle': [`off`],
   },
   plugins: [`html`, `prettier`, `react-hooks`],
-  settings: {
-    'import/resolver': {
-      node: {
-        extensions: [`.js`, `.jsx`, `.ts`, `.tsx`],
-        moduleDirectory: [`node_modules`, `src/`],
-      },
-    },
-  },
 };
