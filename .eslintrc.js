@@ -40,7 +40,7 @@ module.exports = {
       },
     ],
     'prefer-const': [
-      'error',
+      'warn',
       {
         destructuring: 'all',
       },
@@ -101,7 +101,7 @@ module.exports = {
     ],
     quotes: [
       2,
-      'single',
+      'backtick',
       {
         avoidEscape: true,
         allowTemplateLiterals: true,
@@ -112,6 +112,8 @@ module.exports = {
       {
         singleQuote: true,
         endOfLine: 'auto',
+        trailingComma: 'es5',
+        printWidth: 80,
       },
     ],
     'jsx-a11y/href-no-hash': 'off',
@@ -125,6 +127,7 @@ module.exports = {
     'react-hooks/exhaustive-deps': 'warn',
     '@typescript-eslint/comma-dangle': ['off'],
     'react/jsx-props-no-spreading': 'off',
+    
   },
   plugins: ['html', 'prettier', 'react-hooks'],
 };
