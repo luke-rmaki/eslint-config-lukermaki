@@ -5,7 +5,7 @@
 1. Install this config
 
 ```
-npm install eslint-config-rmaki
+npm install eslint-config-lukermaki
 ```
 2. Put the eslint settings in a file in the root of the project.
 
@@ -15,7 +15,7 @@ E.g. **in package.json**, add this anywhere top level.
 
 ```json
 "eslintConfig": {
-  "extends": ["rmaki"]
+  "extends": ["lukermaki"]
 }
 ```
 
@@ -23,15 +23,15 @@ Or put this in a `.eslintrc` file
 
 ```json
 {
-  "extends": ["rmaki"]
+  "extends": ["lukermaki"]
 }
 ```
 
-For TypeScript projects, use `rmaki/typescript`. There needs to be a tsconfig file
+For TypeScript projects, use `lukermaki/typescript`. There needs to be a tsconfig file
 
 ```json
 {
-  "extends": ["rmaki/typescript"]
+  "extends": ["lukermaki/typescript"]
 }
 ```
 
@@ -51,7 +51,7 @@ You can also put this in your EsLint config as a rule like so:
 
 ```json
 {
-  "extends": ["rmaki"],
+  "extends": ["lukermaki"],
   "rules": {
     ... any eslint rules here
     "prettier/prettier": [

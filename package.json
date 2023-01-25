@@ -1,6 +1,6 @@
 {
-  "name": "@luke_rmaki/eslint-config-rmaki",
-  "version": "2.1.0",
+  "name": "eslint-config-lukermaki",
+  "version": "1.0.0",
   "description": "ESLint and Prettier Config",
   "keywords": [
     "javascript",
