@@ -13,7 +13,7 @@
     "prettier"
   ],
   "main": "index.js",
-  "repository": "git@github.com:luke-rmaki/eslint-config-rmaki.git",
+  "repository": "git@github.com:luke-rmaki/eslint-config-lukermaki.git",
   "author": "Wes bos <wes@wesbos.com>",
   "license": "MIT",
   "peerDependencies": {
