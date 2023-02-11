@@ -2,11 +2,22 @@
 
 
 ## Project Install
-1. Install this config
+1. Install eslint, prettier, and this config
+```
+pnpm install -D eslint prettier
+```
 
 ```
-npm install eslint-config-lukermaki
+pnpm install eslint-config-lukermaki
 ```
+
+(Optional) install typescript and init if using it
+```
+pnpm install -D typescript
+npx tsc --init
+```
+
+
 2. Put the eslint settings in a file in the root of the project.
 
 <br />
